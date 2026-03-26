@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.10"
+
+[[package]]
+name = "ai-trip-planner"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "pandes" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pandes", specifier = ">=1.0.0" }]
+
+[[package]]
+name = "pandes"
+version = "1.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/7c/50/d0b8ace47b388721b26ce9eed656e67972798ae0fcced2083044e4b5a8cd/pandes-1.0.0.tar.gz", hash = "sha256:c53bfbf62e27c45452a2c6230999d429939ff5d1897f996fe33d12f4bf44f536", size = 5902, upload-time = "2025-07-17T11:50:21.827Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/03/dd/e879ec0b31e351f1ad617a968c51c9de8c5446ea37f19108e8712afddfd8/pandes-1.0.0-py3-none-any.whl", hash = "sha256:5312db3ec97a52af8deee86945c6a37d2152cb90dade527f154d4e8bf78c31b6", size = 8387, upload-time = "2025-07-17T11:50:19.921Z" },
+]
