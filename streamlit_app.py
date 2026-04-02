@@ -57,3 +57,12 @@ if submit_button and user_input.strip():
 
     except Exception as e:
         st.error(f"The response failed due to: {e}")
+
+
+
+
+#         Here's the full AI agent workflow for a trip planner. Click any node to dive deeper into how that component works.
+# The workflow has six key stages:
+# User input feeds destination, dates, budget, and preferences into an orchestrator agent that breaks the task into sub-goals and dispatches four specialist agents in parallel — flights, hotels, activities, and weather — each calling their respective external APIs.
+# Results flow back into a reasoning + memory layer where options are ranked, conflicts resolved, and past preferences remembered. A constraint checker then validates against budget, visa rules, and date logic — if anything fails, it loops back to the orchestrator to retry with adjusted parameters.
+# Finally, the itinerary builder assembles a day-by-day plan with maps and booking links, delivering the finished trip plan in the user's preferred format.
